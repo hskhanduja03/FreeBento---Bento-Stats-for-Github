@@ -2,7 +2,6 @@ import { NextRequest } from 'next/server';
 import fetchGithubStats from '../../actions/fetchGithubStats'; // Ensure this file is implemented
 import { GitHubResponse } from '@/types'; // Define the type according to GitHub's response structure
 import { NextResponse } from 'next/server'; // Import NextResponse for new API structure
-import { log } from 'console';
 
 export const GET = async (req: NextRequest) => {
   try {

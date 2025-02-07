@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 interface type1Props {
@@ -348,8 +347,9 @@ const Type1Bento: React.FC<type1Props> = ({
 
               <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center mt-4 flex flex-col items-center justify-center gap-3">
                 <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl">
-                  {fullname.trim() + "'s"}
+                  {fullname.trim()}&apos;s
                 </p>
+
                 <p className="text-xl sm:text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-white to-[#AA9CFC] font-bold">
                   Statistics
                 </p>
